@@ -822,9 +822,9 @@ inline void LogDestination::MaybeLogToStderr(LogSeverity severity,
       ANDROID_LOG_ERROR,
       ANDROID_LOG_FATAL,
     };
-    __android_log_write(android_log_levels[severity],
+/*    __android_log_write(android_log_levels[severity],
                         glog_internal_namespace_::ProgramInvocationShortName(),
-                        message + prefix_len);
+                        message + prefix_len);*/
 #else
     (void) prefix_len;
 #endif
